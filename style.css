@@ -9,6 +9,17 @@ html{
     grid-template-areas:
     ". gmail images menu signin"
 }
+a,p{
+    text-decoration: none;
+    color: rgb(0,0,0,0.87);
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: grey;
+}
 
 .gmail{
     grid-area:gmail;
@@ -26,4 +37,141 @@ html{
 .signin{
     grid-area:signin;
     text-align:center;
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 70px 68px 250px;
+    grid-template-areas:
+    ". logo ."
+    ". searchbar ."
+    ". flexbox ."
+    ". offer ."
+}
+.logo{
+    grid-area: logo;
+    justify-self: center;
+    align-self: end;
+    padding-bottom: 15px;
+}
+.searchbar{
+    grid-area: searchbar;
+    height: 40px;
+    align-self: center;
+    width: 90%;
+    justify-self: center;
+    border-color: rgba(197, 188, 188, 0.397);
+    border-radius: 20px;
+}
+.searchbar:hover{
+    box-shadow: 0px 0px 2px rgb(196, 191, 191);
+}
+.flexbox{
+    display: flexbox;
+    grid-area: flexbox;
+    justify-self: center;
+    padding-top: 15px;
+}
+.googlesearch{
+    height:30px;
+}
+.lucky{
+    height:30px;
+}
+.offer{
+    grid-area:offer;
+    justify-self: center;
+    padding-top: 0px;
+}
+.chinesechar{
+    color: #1A0DAB;
+}
+.chinesechar:hover{
+    color: #1A0DAB;
+}
+.melayu{
+    color: #1A0DAB;
+}
+.melayu:hover{
+    color: #1A0DAB;
+}
+.tamil{
+    color: #1A0DAB;
+}
+.tamil:hover{
+    color: #1A0DAB;
+}
+.footer{
+    display: grid;
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 35px 35px;
+    grid-template-areas:
+    "singapore . ."
+    "flexbox1 . flexbox2"    
+}
+.flexbox1{
+    display:flexbox;
+    grid-area: flexbox1;
+    margin: 10px 0px 10px 0px;
+}
+.flexbox2{
+    display:flexbox;
+    grid-area: flexbox2;
+    margin: 10px 0px 10px 0px;
+    justify-self: end;
+}
+.singapore{
+    grid-area: singapore;
+    align-self: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-style: sans-serif;
+    font-weight: normal;
+    margin: 10px 0px 10px 30px;
+}
+.advertising{
+    grid-area: advertising;
+    align-self: center;
+    font-size: 15px;
+    margin: 0px 0px 0px 30px;
+}
+.business{
+    grid-area: business;
+    align-self: center;
+    font-size: 15px;
+    margin: 0px 0px 0px 30px;
+}
+.about{
+    grid-area: about;
+    align-self: center;
+    font-size: 15px;
+    margin: 0px 0px 0px 30px;
+}
+.howsearchworks{
+    grid-area: hsw;
+    align-self: center;
+    font-size: 15px;
+    margin: 0px 0px 0px 30px;
+}
+.privacy{
+    grid-area: privacy;
+    align-self: center;
+    font-size: 15px;
+    margin: 0px 30px 0px 0px;
+}
+.terms{
+    grid-area: terms;
+    align-self: center;
+    font-size: 15px;
+    margin: 0px 30px 0px 0px;
+}
+.settings{
+    grid-area: settings;
+    align-self: center;
+    font-size: 15px;
+    margin: 0px 30px 0px 0px;
 }
