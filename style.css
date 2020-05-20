@@ -24,19 +24,26 @@ a:hover{
 .gmail{
     grid-area:gmail;
     text-align:center;
+    align-self: center;
 }
 .images{
     grid-area:images;
     text-align:center;
+    align-self: center;
 }
 .menu{
     grid-area:menu;
     margin-left: auto;
     margin-right: auto;
+    align-self: center;
+}
+.menu:hover{
+    opacity:50%;
 }
 .signin{
     grid-area:signin;
     text-align:center;
+    align-self: center;
 }
 .main{
     display: grid;
@@ -44,7 +51,7 @@ a:hover{
     grid-template-rows: 250px 70px 68px 250px;
     grid-template-areas:
     ". logo ."
-    ". searchbar ."
+    ". container ."
     ". flexbox ."
     ". offer ."
 }
@@ -54,18 +61,32 @@ a:hover{
     align-self: end;
     padding-bottom: 15px;
 }
+.container{
+    grid-area: container;
+    align-self: center; 
+    justify-self: center;
+    width: 100%;
+}
+
 .searchbar{
-    grid-area: searchbar;
     height: 40px;
     align-self: center;
-    width: 90%;
     justify-self: center;
     border-color: rgba(197, 188, 188, 0.397);
     border-radius: 20px;
+    width: 98%;
+    text-indent: 35px;
+}
+.searchicon{
+    position: relative;
+    bottom: 37px;
+    right: -10px;
+
 }
 .searchbar:hover{
     box-shadow: 0px 0px 2px rgb(196, 191, 191);
 }
+
 .flexbox{
     display: flexbox;
     grid-area: flexbox;
